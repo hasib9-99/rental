@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// ---------------- Buttons --------------- //
+
+.btn{
+    @apply px-5 py-2 rounded-md;
+}
+
+.btn-primary{
+    @extend .btn;
+    @apply bg-blue-300 hover:bg-blue-400;
+}
+
+.btn-secondary{
+    @extend .btn;
+    @apply bg-green-300 hover:bg-green-400;
+}
