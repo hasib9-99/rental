@@ -5,16 +5,16 @@
 
 // ---------------- Buttons --------------- //
 
-.btn{
-    @apply px-5 py-2 rounded-md;
+.btn {
+    @apply px-6 py-3 rounded-lg;
 }
 
-.btn-primary{
+.btn-primary {
     @extend .btn;
-    @apply bg-blue-300 hover:bg-blue-400;
+    @apply bg-primary hover:bg-primary-100 text-white font-semibold text-base;
 }
 
-.btn-secondary{
+.btn-secondary {
     @extend .btn;
-    @apply bg-green-300 hover:bg-green-400;
+    @apply  hover:bg-gray-300 font-semibold text-base border;
 }

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { DEFAULT_CIPHERS } from "tls";
 
 const config: Config = {
   content: [
@@ -9,17 +10,28 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-    },
-
-    extend: {
-      colors: {
-        'regal-blue': {
-          DEFAULT: '#243c5a',
-          "100": "#f00"
-        },
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
       },
     },
-    
+    extend: {
+      colors: {
+        'primary': {
+          DEFAULT: '#066A9E',
+          "100": "#7FD4FA"
+        },
+        'text': {
+          DEFAULT: '#3D3D3D',
+          '100': '#6D6D6D',
+          'light': '#091638'
+        }
+      },
+    },
+
   },
   plugins: [],
 };
