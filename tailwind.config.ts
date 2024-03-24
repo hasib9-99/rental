@@ -27,6 +27,8 @@ const config: Config = {
         'text': {
           DEFAULT: '#3D3D3D',
           '100': '#6D6D6D',
+          '200': '#5D5D5D',
+          '300': '#4F4F4F',
           'light': '#091638'
         }
       },
