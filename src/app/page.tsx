@@ -76,6 +76,19 @@ export default function Home() {
       </section> 
 
 
+      <section clas>
+        <div>
+          <h2>About us</h2>
+          <p>We are a company that connects the world of real estate and finance. We provide a complete service for the sale, purchase or rental of real estate.</p>
+          <p>Our advantage is more than 15 years of experience and soil in attractive locations in Slovakia with branches in Bratislava and Košice.We have a connection to all banks on the Slovak market, so we can solve everything under one roof.</p>
+          <p>By constantly innovating our business activities, we move forward and we are able to offer truly above-standard services that set us apart from the competition.</p>
+        </div>
+        <div>
+          <Image src={'/assets/images/about-us.png'} width={500} height={500} alt="about us" />
+        </div>
+      </section>
+
+
 
 
 
