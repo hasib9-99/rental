@@ -1,4 +1,4 @@
-import IconBed from "@/components/icons/iconBed";
+import IconBed from "@/components/icons/IconBed";
 import IconKichen from "@/components/icons/IconKichen";
 import IconToilet from "@/components/icons/IconToilet";
 import Image from "next/image";
@@ -41,17 +41,15 @@ export default function Home() {
             'card-image.png', 
             'card-image.png', 
             'card-image.png'
-          ].map(( item:any, i:any) => {
+          ].map(( item:any, i:number) => {
             return(
-              <div className="bg-gray-50">
+              <div key={i} className="bg-gray-50">
                 <div>
                   <Image src={`/assets/images/${item}`} width={500} height={500} alt="card image"/>
                 </div>
                 <div className="py-6 px-4">
                   <h4 className="text-lg">House for Sell</h4>
-
                   <div className=" flex items-center pt-4 pb-6">
-
                   <div className="flex justify-center items-center">
                     <span className="text-2xl pr-1"> <IconBed /> </span><p className="text-xs">3 Bedroom</p>
                   </div>
