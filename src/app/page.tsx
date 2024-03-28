@@ -1,3 +1,6 @@
+import IconBed from "@/components/icons/iconBed";
+import IconKichen from "@/components/icons/IconKichen";
+import IconToilet from "@/components/icons/IconToilet";
 import Image from "next/image";
 
 export default function Home() {
@@ -32,27 +35,47 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-6">
         {
           [
-            'banner-right.png', 
-            'banner-right.png', 
-            'banner-right.png', 
-            'banner-right.png', 
-            'banner-right.png', 
-            'banner-right.png'
+            'card-image.png', 
+            'card-image.png', 
+            'card-image.png', 
+            'card-image.png', 
+            'card-image.png', 
+            'card-image.png'
           ].map(( item:any, i:any) => {
             return(
               <div className="bg-gray-50">
                 <div>
-                  <Image src={`/assets/banners/${item}`} width={500} height={500} alt="card image"/>
+                  <Image src={`/assets/images/${item}`} width={500} height={500} alt="card image"/>
                 </div>
                 <div className="py-6 px-4">
                   <h4 className="text-lg">House for Sell</h4>
+
+                  <div className=" flex items-center pt-4 pb-6">
+
+                  <div className="flex justify-center items-center">
+                    <span className="text-2xl pr-1"> <IconBed /> </span><p className="text-xs">3 Bedroom</p>
+                  </div>
+                  <div className="flex justify-center items-center px-5">
+                    <span className="text-2xl pr-1"> <IconToilet /> </span><p className="text-xs">2 Bathroom</p>       
+                  </div>
+                  <div className="flex justify-center items-center">
+                    <span className="text-2xl pr-1"> <IconKichen /> </span> <p className="text-xs">3 Bedroom</p>
+                  </div>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <div>
+                      <h4 className="text-base font-bold text-text-light">320 000€</h4>
+                      <p className="text-xs text-text-100">Barcelona IX.</p>
+                    </div>
+                    <button className="btn border border-gray-900 rounded-lg text-base px-6 py-3 hover:bg-gray-200">Contact seller</button>
+                  </div>
                 </div>
               </div>
             )
           })
         }
         </div>
-      </section>
+      </section> 
 
 
 
