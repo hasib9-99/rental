@@ -145,13 +145,29 @@ export default function Home() {
       </section>
 
 
-
-
-
-
-
-
-
+      <section>
+        <div>
+          <h2>Our client speak</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aut.</p>
+        </div>
+        {
+          ['client.png', 'client.png', 'client.png'].map((item: any, i: number) => {
+            return (
+              <div key={i}>
+                <Image src={`/assets/images/${item}`} width={500} height={500} alt="client image" />
+                <div>
+                  <h4>“Professional Partner”</h4>
+                  <p><span>“</span> Explore homes that offer a sense of sanctuary, combining comfort <span>”</span></p>
+                  <div>
+                    <h4>Abu Hasib Sarker</h4>
+                    <p>Busness Owner</p>
+                  </div>
+                </div>
+              </div>
+            )
+          })
+        }
+      </section>
 
 
 
