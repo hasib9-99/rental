@@ -170,6 +170,16 @@ export default function Home() {
       </section>
 
 
+      <section>
+        <h2>Don't miss a thing!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, illum!</p>
+        <div>
+          <input type="email" placeholder="Your email...." />
+          <button className="btn-primary">subscriber</button>
+        </div>
+      </section>
+
+
 
 
 
