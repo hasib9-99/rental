@@ -2,6 +2,7 @@ import IconBed from "@/components/icons/IconBed";
 import IconKichen from "@/components/icons/IconKichen";
 import IconToilet from "@/components/icons/IconToilet";
 import Image from "next/image";
+import IconStar from '@/components/icons/IconStar';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         </div>
 
         <div className="w-full lg:w-1/2">
-        <Image className="w-full lg:h-[554px]" src={'/assets/banners/banner-right.png'} width={588} height={554} alt="banner-right.png" />
+          <Image className="w-full lg:h-[554px]" src={'/assets/banners/banner-right.png'} width={588} height={554} alt="banner-right.png" />
         </div>
 
         <div className="absolute lg:w-7/12 bg-white  lg:bottom-32 lg:right-10 p-8 rounded-lg lg:flex justify-between gap-6">
@@ -33,50 +34,50 @@ export default function Home() {
           <button className="btn-secondary">Show all offers</button>
         </div>
         <div className="grid grid-cols-3 gap-6">
-        {
-          [
-            'card-image.png', 
-            'card-image.png', 
-            'card-image.png', 
-            'card-image.png', 
-            'card-image.png', 
-            'card-image.png'
-          ].map(( item:any, i:number) => {
-            return(
-              <div key={i} className="bg-gray-50">
-                <div>
-                  <Image src={`/assets/images/${item}`} width={500} height={500} alt="card image"/>
-                </div>
-                <div className="py-6 px-4">
-                  <h4 className="text-lg">House for Sell</h4>
-                  <div className=" flex items-center pt-4 pb-6">
-                  <div className="flex justify-center items-center">
-                    <span className="text-2xl pr-1"> <IconBed /> </span><p className="text-xs">3 Bedroom</p>
+          {
+            [
+              'card-image.png',
+              'card-image.png',
+              'card-image.png',
+              'card-image.png',
+              'card-image.png',
+              'card-image.png'
+            ].map((item: any, i: number) => {
+              return (
+                <div key={i} className="bg-gray-50">
+                  <div>
+                    <Image src={`/assets/images/${item}`} width={500} height={500} alt="card image" />
                   </div>
-                  <div className="flex justify-center items-center px-5">
-                    <span className="text-2xl pr-1"> <IconToilet /> </span><p className="text-xs">2 Bathroom</p>       
-                  </div>
-                  <div className="flex justify-center items-center">
-                    <span className="text-2xl pr-1"> <IconKichen /> </span> <p className="text-xs">3 Bedroom</p>
-                  </div>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <h4 className="text-base font-bold text-text-light">320 000€</h4>
-                      <p className="text-xs text-text-100">Barcelona IX.</p>
+                  <div className="py-6 px-4">
+                    <h4 className="text-lg">House for Sell</h4>
+                    <div className=" flex items-center pt-4 pb-6">
+                      <div className="flex justify-center items-center">
+                        <span className="text-2xl pr-1"> <IconBed /> </span><p className="text-xs">3 Bedroom</p>
+                      </div>
+                      <div className="flex justify-center items-center px-5">
+                        <span className="text-2xl pr-1"> <IconToilet /> </span><p className="text-xs">2 Bathroom</p>
+                      </div>
+                      <div className="flex justify-center items-center">
+                        <span className="text-2xl pr-1"> <IconKichen /> </span> <p className="text-xs">3 Bedroom</p>
+                      </div>
                     </div>
-                    <button className="btn border border-gray-900 rounded-lg text-base px-6 py-3 hover:bg-gray-200">Contact seller</button>
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <h4 className="text-base font-bold text-text-light">320 000€</h4>
+                        <p className="text-xs text-text-100">Barcelona IX.</p>
+                      </div>
+                      <button className="btn border border-gray-900 rounded-lg text-base px-6 py-3 hover:bg-gray-200">Contact seller</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            )
-          })
-        }
+              )
+            })
+          }
         </div>
-      </section> 
+      </section>
 
 
-      <section clas>
+      <section className="flex py-20 px-8 bg-gray-50 mt-40">
         <div>
           <h2>About us</h2>
           <p>We are a company that connects the world of real estate and finance. We provide a complete service for the sale, purchase or rental of real estate.</p>
@@ -84,11 +85,64 @@ export default function Home() {
           <p>By constantly innovating our business activities, we move forward and we are able to offer truly above-standard services that set us apart from the competition.</p>
         </div>
         <div>
-          <Image src={'/assets/images/about-us.png'} width={500} height={500} alt="about us" />
+          <Image src={'/assets/images/about-us.png'} width={1000} height={500} alt="about us" />
         </div>
       </section>
 
-
+      <section>
+        <h2>Our Top Agent</h2>
+        <div className="flex">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, animi.</p>
+          <button>Show All Agent</button>
+        </div>
+        <div className="flex">
+          {
+            [
+              'agent-1.png',
+              'agent-2.png',
+              'agent-3.png'
+            ].map((item: any, i: number) => {
+              return (
+                <div key={i}>
+                  <Image src={`/assets/agent/${item}`} width={500} height={500} alt="agent image" />
+                  <div>
+                    <h4>Martina </h4>
+                    <div className="flex">
+                      <div className="flex">
+                        <p>18</p>
+                        <p>Local Deals</p>
+                      </div>
+                      <div className="flex">
+                        <p>20</p>
+                        <p>recant Deals</p>
+                      </div>
+                    </div>
+                    <div className="flex justify-between">
+                      <div>
+                        <div className="flex items-center">
+                          <span>5.0</span>
+                          <div className="flex">
+                            {
+                              [1, 2, 3, 4, 5].map((i: number) => {
+                                return (
+                                  <span key={i}> <IconStar /> </span>
+                                )
+                              })
+                            }
+                          </div>
+                        </div>
+                        <p>200 Reviews</p>
+                      </div>
+                      <button className="btn-primary">Contact Martina</button>
+                    </div>
+                    <p>license # 10401250178</p>
+                  </div>
+                </div>
+              )
+            })
+          }
+        </div>
+      </section>
 
 
 
