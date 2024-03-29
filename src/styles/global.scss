@@ -2,19 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
 // ---------------- Buttons --------------- //
 
 .btn {
-    @apply px-6 py-3 rounded-lg;
+  @apply px-6 py-3 rounded-lg;
 }
 
 .btn-primary {
-    @extend .btn;
-    @apply bg-primary hover:bg-primary-100 text-white font-semibold text-base;
+  @extend .btn;
+  @apply bg-primary hover:bg-primary-100 text-white font-semibold text-base;
 }
 
 .btn-secondary {
-    @extend .btn;
-    @apply  hover:bg-gray-300 font-semibold text-base border;
+  @extend .btn;
+  @apply hover:bg-gray-300 font-semibold text-base border;
+}
+
+//---------------text----------------------//
+.sub-title {
+  @apply font-[Merriweather] text-5xl text-text font-bold;
 }

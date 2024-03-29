@@ -28,12 +28,12 @@ export default function Home() {
 
       {/* Top offers  section start */}
       <section className="pt-16">
-        <h2 className="font-[Merriweather] text-5xl text-text font-bold">Top Offers</h2>
-        <div className="flex items-center justify-between">
-          <p className="lg:w-5/12 text-text-200 text-xl pt-3">Fulfill your career dreams, enjoy all the achievements of the city center and luxury housing to the fullest.</p>
+        <h2 className="sub-title">Top Offers</h2>
+        <div className="flex sm:flex-col md:flex-row items-center justify-between">
+          <p className="lg:w-5/12 sm:text-center md:sm:text-start text-text-200 text-xl py-3">Fulfill your career dreams, enjoy all the achievements of the city center and luxury housing to the fullest.</p>
           <button className="btn-secondary">Show all offers</button>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {
             [
               'card-image.png',
@@ -76,26 +76,28 @@ export default function Home() {
         </div>
       </section>
 
-
-      <section className="flex py-20 px-8 bg-gray-50 mt-40">
-        <div>
-          <h2>About us</h2>
-          <p>We are a company that connects the world of real estate and finance. We provide a complete service for the sale, purchase or rental of real estate.</p>
-          <p>Our advantage is more than 15 years of experience and soil in attractive locations in Slovakia with branches in Bratislava and Košice.We have a connection to all banks on the Slovak market, so we can solve everything under one roof.</p>
-          <p>By constantly innovating our business activities, we move forward and we are able to offer truly above-standard services that set us apart from the competition.</p>
+      {/* about section  */}
+      <section className="flex gap-16 py-20 px-8 bg-gray-50 mt-40">
+        <div className="w-1/2 flex flex-col gap-6">
+          <h2 className="sub-title ">About us</h2>
+          <p className="text-xl text-text-200">We are a company that connects the world of real estate and finance. We provide a complete service for the sale, purchase or rental of real estate.</p>
+          <p className="text-xl text-text-200">Our advantage is more than 15 years of experience and soil in attractive locations in Slovakia with branches in Bratislava and Košice.We have a connection to all banks on the Slovak market, so we can solve everything under one roof.</p>
+          <p className="text-xl text-text-200">By constantly innovating our business activities, we move forward and we are able to offer truly above-standard services that set us apart from the competition.</p>
         </div>
-        <div>
-          <Image src={'/assets/images/about-us.png'} width={1000} height={500} alt="about us" />
+        <div className="w-1/2">
+          <Image src={'/assets/images/about-us.png'} width={600} height={100} alt="about us" />
         </div>
       </section>
 
+
+      {/* Our Top Agent */}
       <section>
-        <h2>Our Top Agent</h2>
-        <div className="flex">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, animi.</p>
-          <button>Show All Agent</button>
+        <h2 className="sub-title">Our Top Agent</h2>
+        <div className="flex justify-between items-center pt-6 pb-16">
+          <p className="text-xl text-text-300 lg:w-1/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus rutrum donec ultricies cras id ac.</p>
+          <button className="border border-primary text-primary font-semibold rounded-lg text-base px-6 py-3 hover:bg-gray-200">Show All Agent</button>
         </div>
-        <div className="flex">
+        <div className="flex gap-6">
           {
             [
               'agent-1.png',
@@ -103,10 +105,10 @@ export default function Home() {
               'agent-3.png'
             ].map((item: any, i: number) => {
               return (
-                <div key={i}>
+                <div key={i} className="bg-gray-50">
                   <Image src={`/assets/agent/${item}`} width={500} height={500} alt="agent image" />
-                  <div>
-                    <h4>Martina </h4>
+                  <div className="p-3">
+                    <h4 className="">Martina </h4>
                     <div className="flex">
                       <div className="flex">
                         <p>18</p>

@@ -7,7 +7,7 @@ import IconLinkedin from '../icons/IconLinkedin';
 
 function Footer() {
   return (
-    <footer className='flex'>
+    <footer className='flex bg-primary justify-center '>
       <div>
         <span>
           <Logo />
