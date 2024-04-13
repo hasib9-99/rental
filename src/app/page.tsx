@@ -147,19 +147,19 @@ export default function Home() {
       </section>
 
 
-      <section className="grid sm:grid-cols-1 md:grid-cols-2 pt-28 gap-6 rounded-lg">
+      <section className="grid sm:grid-cols-1 md:grid-cols-2 pt-28 gap-6">
         <div>
           <h2 className="sub-title">Our client speak</h2>
-          <p className="text-xl text-gray-900">Explore homes that offer a sense of sanctuary, combining comfort and luxury for the ultimate living .</p>
+          <p className="text-xl text-gray-500 pt-6 lg:w-4/5">Explore homes that offer a sense of sanctuary, combining comfort and luxury for the ultimate living .</p>
         </div>
         {
           ['client.png', 'client.png', 'client.png'].map((item: any, i: number) => {
             return (
-              <div key={i} className="bg-gray-50 p-6 flex gap-8">
+              <div key={i} className="bg-gray-50 p-6 flex gap-8 rounded-lg">
                 <Image  src={`/assets/images/${item}`} width={256} height={250} alt="client image" />
                 <div className="flex flex-col gap-8">
                   <h4 className="text-2xl text-gray-900 font-semibold	">“Professional Partner”</h4>
-                  <p className="text-base text-primary"><span className="text-gray-900">“</span> Explore homes that offer a sense of sanctuary, combining comfort <span className="text-gray-900">”</span></p>
+                  <p className="text-base text-primary-200"><span className="text-gray-900">“</span> Explore homes that offer a sense of sanctuary, combining comfort <span className="text-gray-900">”</span></p>
                   <div>
                     <h4 className="text-2xl text-gray-900 font-semibold">Abu Hasib Sarker</h4>
                     <p className="text-xs text-gray-500">Busness Owner</p>

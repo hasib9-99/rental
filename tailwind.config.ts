@@ -22,7 +22,8 @@ const config: Config = {
       colors: {
         'primary': {
           DEFAULT: '#066A9E',
-          "100": "#7FD4FA"
+          "100": "#7FD4FA",
+          "200": '#12A6E5'
         },
         'text': {
           DEFAULT: '#3D3D3D',
