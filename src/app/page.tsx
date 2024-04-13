@@ -147,22 +147,22 @@ export default function Home() {
       </section>
 
 
-      <section>
+      <section className="grid sm:grid-cols-1 md:grid-cols-2 pt-28 gap-6 rounded-lg">
         <div>
-          <h2>Our client speak</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, aut.</p>
+          <h2 className="sub-title">Our client speak</h2>
+          <p className="text-xl text-gray-900">Explore homes that offer a sense of sanctuary, combining comfort and luxury for the ultimate living .</p>
         </div>
         {
           ['client.png', 'client.png', 'client.png'].map((item: any, i: number) => {
             return (
-              <div key={i}>
-                <Image src={`/assets/images/${item}`} width={500} height={500} alt="client image" />
-                <div>
-                  <h4>“Professional Partner”</h4>
-                  <p><span>“</span> Explore homes that offer a sense of sanctuary, combining comfort <span>”</span></p>
+              <div key={i} className="bg-gray-50 p-6 flex gap-8">
+                <Image  src={`/assets/images/${item}`} width={256} height={250} alt="client image" />
+                <div className="flex flex-col gap-8">
+                  <h4 className="text-2xl text-gray-900 font-semibold	">“Professional Partner”</h4>
+                  <p className="text-base text-primary"><span className="text-gray-900">“</span> Explore homes that offer a sense of sanctuary, combining comfort <span className="text-gray-900">”</span></p>
                   <div>
-                    <h4>Abu Hasib Sarker</h4>
-                    <p>Busness Owner</p>
+                    <h4 className="text-2xl text-gray-900 font-semibold">Abu Hasib Sarker</h4>
+                    <p className="text-xs text-gray-500">Busness Owner</p>
                   </div>
                 </div>
               </div>
@@ -181,36 +181,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
-
-
-      {/* <p className="bg-regal-blue-100">
-        this is home page
-      </p>
-
-      <button className="btn-primary">Button Primary</button>
-      <button className="btn bg-gray-300 hover:bg-gray-400">Button Secondary</button>
-
-      <div className="grid grid-cols-3 gap-5">
-        {
-          ["floki.jpg", "floki.jpg", "floki.jpg", "floki.jpg", "floki.jpg", "floki.jpg"].map((item: any, i: any) => {
-            return (
-              <div className="shadow-md bg-blue-300 p-5">
-                <Image src={`/assets/images/${item}`} width={300} height={400} alt="Floki the dog" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, modi!</p>
-              </div>
-            )
-          })
-        }
-      </div> */}
 
 
     </main>
